@@ -1,1 +1,8 @@
 *.swp
+
+webapp/nodejs
+webapp/perl
+webapp/php
+webapp/public
+webapp/python
+webapp/ruby
