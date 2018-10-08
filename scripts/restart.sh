@@ -31,9 +31,9 @@ echo ""
 #echo ""
 
 # application reload
-sudo cp etc/systemd.go.service /etc/systemd/system/cco.golang.service
+sudo cp /root/cco/files/systemd.golang.service /etc/systemd/system/cco.golang.service
 sudo systemctl daemon-reload
-cd ~/cco/webapp/go
+cd /root/cco/webapp/go
 make ensure
 make
 sudo systemctl restart cco.golang.service
