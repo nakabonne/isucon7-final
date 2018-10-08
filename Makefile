@@ -5,7 +5,7 @@ SHELL  = /usr/bin/env bash
 
 alp:
 	#sudo alp -r --sum --limit=1000 -f $(file) --aggregates "/iine\S+,/photo\S+,/tag\S+,/article\S+,/member\S+,/update\S+,/profileupdate\S+"
-	sudo alp -r --sum --limit=1000 -f $(file)
+	sudo alp -r --sum --limit=1000 -f $(file) --aggregates "/ws\S+,/images\S+,/root\S+"
 
 restart:
 	sh scripts/restart.sh
