@@ -14,7 +14,8 @@ sudo cp /root/cco/files/cco.nginx.conf /etc/nginx/nginx.conf
 #sudo unlink *
 #sudo ln -s ../sites-available/cco.nginx.conf
 sudo /usr/sbin/nginx -t
-sudo systemctl restart nginx
+sudo service nginx reload
+#sudo systemctl restart nginx
 echo "$(tput setaf 2)reverse proxy reload Succeeded! $(tput sgr0)"
 echo ""
 

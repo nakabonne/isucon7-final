@@ -12,3 +12,6 @@ restart:
 
 rotate:
 	sh scripts/rotate_alplog.sh
+
+bench:
+	cd bench && ./bench -remotes localhost:80
