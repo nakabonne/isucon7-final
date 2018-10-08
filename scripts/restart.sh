@@ -8,10 +8,11 @@ echo "$(tput setaf 2)Pull Succeeded! $(tput sgr0)"
 echo ""
 
 # reverse proxy reload
-sudo cp /root/cco/files/cco.nginx.conf /etc/nginx/sites-available
-cd /etc/nginx/sites-enabled
-sudo unlink *
-sudo ln -s ../sites-available/cco.nginx.conf
+sudo cp root/cco/files/nginx.conf /etc/nginx/nginx.conf
+#sudo cp /root/cco/files/cco.nginx.conf /etc/nginx/sites-available
+#cd /etc/nginx/sites-enabled
+#sudo unlink *
+#sudo ln -s ../sites-available/cco.nginx.conf
 sudo /usr/sbin/nginx -t
 sudo systemctl restart nginx
 echo "$(tput setaf 2)reverse proxy reload Succeeded! $(tput sgr0)"
